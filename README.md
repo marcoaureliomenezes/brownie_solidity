@@ -11,13 +11,30 @@
     sudo apt install npm
     yarn global add ganache-cli
 
-### Brownie framework
+## Brownie framework
 
-#### Installation
+### Installation
 
     python3 -m pip install --user pipx
     python3 -m pipx ensurepath
     pipx install eth-brownie
+
+### Brownie Structure
+
+The basic structure of a brownie application, after the command brownie init seems like this:
+
+    _ build
+        |_ contracts
+        |_ deployments
+        |_ interfaces
+    
+    _ contracts
+    _ interfaces
+    _ reports
+    _ scripts
+    _ tests (Python tests for testing the smart contract)
+    _ brownie-config.yaml
+
 
 
 ### Start a project with Brownie
